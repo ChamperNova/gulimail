@@ -1,0 +1,20 @@
+package com.atguigu.gulimall.product.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.gulimall.product.entity.SkuInfoEntity;
+
+import java.util.Map;
+
+/**
+ * sku信息
+ *
+ * @author sss
+ * @email sss@gmail.com
+ * @date 2021-07-28 21:56:22
+ */
+public interface SkuInfoService extends IService<SkuInfoEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
